@@ -10,13 +10,24 @@
 <body>
     <h2 align = "center">RINCIAN PESANAN</h2>
 
-    <center>
-        <a href="<?php echo "menu_admin.php"; ?>">MENU</a>
-        <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN PESANAN</a>
-        <a href="<?php echo "pembukuan.php"; ?>">LAPORAN PENJUALAN</a>
-    </center>
-
     <table>
+        <tr>
+            <td>
+                <center>
+                    <a href="<?php echo "menu_admin.php"; ?>">MENU</a>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN PESANAN</a>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <a href="<?php echo "pembukuan.php"; ?>">LAPORAN PENJUALAN</a>
+                </center>
+            </td>
+        </tr>
         <tr>
             <td colspan="1">
 
