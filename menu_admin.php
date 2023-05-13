@@ -11,22 +11,26 @@
     <title>MENU ADMIN</title>
 </head>
 <body>
+    <table border = 0px; align = "center"; style="width:100%">
+        <center>
+            <th> <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a> </th>
+            <th> <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN MENU</a> </th>
+            <th> <a href="<?php echo "pembukuan.php"; ?>">LAPORAN KEUANGAN</a> </th>
+            <p></p>
+        </center>        
+    </table>
+
     <h2 align = "center">MENU ADMIN</h2>
 
-    <center>
-        <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a>
-        <p></p>
-    </center>
-
     <div>
-        <table border = 1px; align = "center">
+        <table border = 1px; align = "center"; style="width:100%">
             <thead bgcolor = silver>
                 <tr>
                     <th>Id Menu</th>
                     <th>Gambar</th>
                     <th>Nama Menu</th>
                     <th>Harga</th>
-                    <th></th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,7 +47,7 @@
                         <td> <?php echo $data['harga']; ?></td>
                         <td>
                             <a href="<?php echo "updatemenu_admin.php?id_menu=".$data['id_menu'] ?>"> Update </a> &nbsp;&nbsp;
-                            <a href="<?php echo "deletemenu_admin.php?id_menu=".$data['id_menu'] ?>"> Update </a>
+                            <a href="<?php echo "deletemenu_admin.php?id_menu=".$data['id_menu'] ?>"> Delete </a>
                         </td>
                     </tr>
                 <?php endwhile ?>
