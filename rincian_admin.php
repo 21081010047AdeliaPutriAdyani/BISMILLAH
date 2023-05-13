@@ -10,9 +10,11 @@
 </head>
 <body>
     <ul class="pemweb">
-        <li class="navi"><a href="<?php echo "menu_admin.php"; ?>"> Menu</a></li>
-        <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>">Rincian Pesanan</a></li>
-        <li class="navi"><a href="<?php echo "pembukuan.php"; ?>">Laporan Penjualan</a></li>
+        <h3>
+            <li class="navi"><a href="<?php echo "menu_admin.php"; ?>"> Menu</a></li>
+            <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>">Rincian Pesanan</a></li>
+            <li class="navi"><a href="<?php echo "pembukuan.php"; ?>">Laporan Penjualan</a></li>
+        </h3>
     </ul>
     <h2 align = "center">RINCIAN PESANAN</h2>
 
