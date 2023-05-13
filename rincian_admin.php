@@ -1,5 +1,5 @@
 <?php
-    include('conn.php');
+    include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
