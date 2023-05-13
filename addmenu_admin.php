@@ -56,7 +56,10 @@
             </div>
             <div>
               <label>GAMBAR</label>
-              <input type="text" placeholder="gambar" name="gambar" required="required">
+              <form method="post" enctype="multipart/form-data" action="prosesupload.php">
+                <input type="file" name="gambar">
+                <input type="submit" value="Upload">
+              </form>
             </div>
             <div>
               <label>NAMA MENU</label>
