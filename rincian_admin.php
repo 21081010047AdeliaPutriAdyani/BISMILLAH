@@ -23,7 +23,7 @@
             <thead bgcolor = silver>
                 <tr>
                     <th>id_order</th>
-                    <th>tgl/jam</th>
+                    <th>tgl_jam</th>
                     <th>nama_pelanggan</th>
                     <th>jumlah</th>
                     <th>nama_menu</th>
@@ -43,7 +43,7 @@
 
                 <tr>
                     <td> <?php echo $data['id_order'];?></td>
-                    <td> <?php echo $data['tgl/jam'];?></td>
+                    <td> <?php echo $data['tgl_jam'];?></td>
                     <td> <?php echo $data['nama_pelanggan'];?></td>
                     <td> <?php echo $data['jumlah'];?></td>
                     <td> <?php echo $data['nama_menu'];?></td>
@@ -51,10 +51,10 @@
                     <td> <?php echo $data['total_harga'];?></td>
                     <td> <?php echo $data['total_order'];?></td>
                     <td>
-                        <a href="<?php echo "print.php?id_menu=".$data['id_menu'] ?>"> print </a> &nbsp;&nbsp;
+                        <a href="<?php echo "print.php?id_menu=".$data['id_order'] ?>"> print </a> &nbsp;&nbsp;
                     </td>
                 </tr>
-                <?php endwhile ?>
+                <?php endwhile; ?>
             </tbody>
     </table>
     
