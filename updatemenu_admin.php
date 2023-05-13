@@ -1,14 +1,14 @@
 <?php
-  include ('conn.php');
+  include ('koneksi.php');
 
   $status = '';
   $result = '';
   //melakukan pengecekan apakah ada variable GET yang dikirim
   if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-      if (isset($_GET['customerNumber'])) {
+      if (isset($_GET['id_menu'])) {
           //query SQL
-          $customerNumber_upd = $_GET['customerNumber'];
-          $query = "SELECT * FROM customers WHERE customerNumber = '$customerNumber_upd'";
+          $id_menu_upd = $_GET['id_menu'];
+          $query = "SELECT * FROM menu WHERE id_menu = '$id_menu_upd'";
 
           //eksekusi query
           $result = mysqli_query(connection(),$query);
@@ -70,7 +70,7 @@
             </div>
             <div>
               <label>NAMA MENU</label>
-              <input type="text" placeholder="nama menu" name="nama menu" value="<?php echo $data['nama menu'];  ?>" required="required">
+              <input type="text" placeholder="nama menu" name="nama menu" value="<?php echo $data['nama_menu'];  ?>" required="required">
             </div>
             <div>
               <label>HARGA</label>
