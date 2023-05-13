@@ -56,9 +56,8 @@
             </div>
             <div>
               <label>GAMBAR</label>
-              <form method="post" enctype="multipart/form-data" action="prosesupload.php">
+              <form method="post" enctype="multipart/form-data" >
                 <input type="file" name="gambar">
-                <input type="submit" value="Upload">
               </form>
             </div>
             <div>
@@ -70,7 +69,7 @@
               <input type="text" placeholder="harga" name="harga" required="required">
             </div>
             
-            <button type="submit">Simpan</button>
+            <button type="submit" value="Upload" action="prosesupload.php">Simpan</button>
           </form>
         </main>
   </body>

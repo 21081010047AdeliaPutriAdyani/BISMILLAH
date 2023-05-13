@@ -5,12 +5,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENU ADMIN</title>
+    <title>Menu Admin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <ul class="pemweb">
+        <h3>
+            <li class="navi"><a href="<?php echo "addmenu_admin.php"; ?>"> Add Menu</a></li>
+            <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>"> Rincian Pemesanan</a></li>
+            <li class="navi"><a href="<?php echo "pembukuan.php"; ?>"> Laporan Penjualan</a></li>            
+        </h3>
+    </ul>
     <h2 align = "center">MENU ADMIN</h2>
 
     <div>
@@ -33,7 +38,7 @@
                 <?php while($data = mysqli_fetch_array($result)) : ?>
                     <tr>
                         <td> <?php echo $data['id_menu']; ?></td>
-                        <td> <?php echo "img src='images/" . $data['gambar'] . "width='100' height='100'" ?></td> 
+                        <td> <?php echo "img src='images/" . $data['gambar'] . " style='width=100; height=100;' " ?></td> 
                         <td> <?php echo $data['nama_menu']; ?></td>
                         <td> <?php echo $data['harga']; ?></td>
                         <td>
