@@ -11,6 +11,34 @@
     <title>MENU ADMIN</title>
 </head>
 <body>
+<table style="width:100%" cellspacing="0" bgcolor=silver>
+        <tr>
+            <td>
+                <center>
+                    <a href="<?php echo "menu_admin.php"; ?>">MENU</a>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN PESANAN</a>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <a href="<?php echo "pembukuan.php"; ?>">LAPORAN PENJUALAN</a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                    <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a>
+                    <p></p>
+                </center>
+            </td>
+        </tr>
+    </table>
+
     <h2 align = "center">MENU ADMIN</h2>
 
     <center>

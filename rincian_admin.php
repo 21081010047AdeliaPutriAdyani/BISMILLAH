@@ -8,9 +8,7 @@
     <title>Rincian Pesanan</title>
 </head>
 <body>
-    <h2 align = "center">RINCIAN PESANAN</h2>
-
-    <table>
+    <table style="width:100%" cellspacing="0" bgcolor=silver>
         <tr>
             <td>
                 <center>
@@ -29,9 +27,6 @@
             </td>
         </tr>
         <tr>
-            <td colspan="1">
-
-            </td>
             <td>
                 <center>
                     <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a>
@@ -40,6 +35,8 @@
             </td>
         </tr>
     </table>
+
+    <h2 align = "center">RINCIAN PESANAN</h2>
 
     <div>
         <table border = 1px; align = "center">
