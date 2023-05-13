@@ -3,14 +3,17 @@
 include "koneksi.php";
 
 // Ambil Data yang Dikirim dari Form
-
 $id_menu = $_POST['id_menu'];
-      $gambar = $_POST['gambar'];
-      $nama_menu = $_POST['nama_menu'];
-      $harga = $_POST['harga'];
+$gambar = $_FILES['gambar']['name'];
+$nama_menu = $_POST['nama_menu'];
+$harga = $_POST['harga'];
 
 // Set path folder tempat menyimpan gambarnya
-$path = "images/".$nama_menu;
+$path = "images/".$gambar;
+
+$tipe_file = $_FILES['gambar']['type'];
+$ukuran_file = $_FILES['gambar']['size'];
+$tmp_file = $_FILES['gambar']['tmp_name'];
 
 if($tipe_file == "image/jpeg" || $tipe_file == "image/png"){ // Cek apakah tipe file yang diupload adalah JPG / JPEG / PNG
   // Jika tipe file yang diupload JPG / JPEG / PNG, lakukan :
@@ -21,12 +24,12 @@ if($tipe_file == "image/jpeg" || $tipe_file == "image/png"){ // Cek apakah tipe 
       // Jika gambar berhasil diupload, Lakukan :	
       // Proses simpan ke Database
       $query = "INSERT INTO menu (id_menu, gambar, nama_menu, harga) 
-      VALUES('$id_menu' , '$gambar' , '$nama_menu' , '$harga')";
+                VALUES('$id_menu', '$gambar', '$nama_menu', '$harga')";
       $sql = mysqli_query($connection, $query); // Eksekusi/ Jalankan query dari variabel $query
       
       if($sql){ // Cek jika proses simpan ke database sukses atau tidak
         // Jika Sukses, Lakukan :
-        header("location: menu_admin.php"); // Redirectke halaman index.php
+        header("location: menu_admin.php"); // Redirect ke halaman menu_admin.php
       }else{
         // Jika Gagal, Lakukan :
         echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
