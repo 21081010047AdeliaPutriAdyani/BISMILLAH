@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $gambar = $_FILES['gambar']['name'];
   $nama_menu = $_POST['nama_menu'];
   $harga = $_POST['harga'];
-
+    
   // Query SQL
   $sql = "UPDATE menu SET gambar='$gambar', nama_menu='$nama_menu', harga='$harga' WHERE id_menu='$id_menu'";
 
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div>
           <label>GAMBAR</label>
-          <input type="file" name="gambar" required="required">
+          <input type="file" name="gambar" value="<?php echo $data['gambar']; ?>" required="required">
         </div>
         <div>
           <label>NAMA MENU</label>
