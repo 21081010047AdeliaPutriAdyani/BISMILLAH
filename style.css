@@ -1,0 +1,25 @@
+ul{
+    padding: 15px;
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: silver;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+li.pemweb {
+    
+    list-style: none;
+    display: inline;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li.navi { 
+    margin-left: 15px;
+    list-style: none;
+    display: inline;
+    color: #d4d4d4;
+    text-decoration: none;
+}

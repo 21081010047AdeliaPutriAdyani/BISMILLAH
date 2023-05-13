@@ -6,36 +6,14 @@
 <html lang="en">
 <head>
     <title>Rincian Pesanan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table style="width:100%" cellspacing="0" bgcolor=silver>
-        <tr>
-            <td>
-                <center>
-                    <a href="<?php echo "menu_admin.php"; ?>">MENU</a>
-                </center>
-            </td>
-            <td>
-                <center>
-                    <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN PESANAN</a>
-                </center>
-            </td>
-            <td>
-                <center>
-                    <a href="<?php echo "pembukuan.php"; ?>">LAPORAN PENJUALAN</a>
-                </center>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <center>
-                    <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a>
-                    <p></p>
-                </center>
-            </td>
-        </tr>
-    </table>
-
+    <ul class="pemweb">
+        <li class="navi"><a href="<?php echo "menu_admin.php"; ?>"> Menu</a></li>
+        <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>">Rincian Pesanan</a></li>
+        <li class="navi"><a href="<?php echo "pembukuan.php"; ?>">Laporan Penjualan</a></li>
+    </ul>
     <h2 align = "center">RINCIAN PESANAN</h2>
 
     <div>
