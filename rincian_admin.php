@@ -1,5 +1,5 @@
 <?php
-    include('koneksi.php');
+    include ('koneksi.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,8 @@
     <h2 align = "center">RINCIAN PESANAN</h2>
 
     <div>
-        <table border = 1px; align = "center">
+        <table border = 1px; align = "center"; style="width:100%">
             <thead bgcolor = silver>
-        <table>
-            <thead>
                 <tr>
                     <th>id_order</th>
                     <th>tgl/jam</th>
@@ -36,24 +34,25 @@
                 </tr>
             </thead>
             <tbody>
-                <?php 
+                <?php
                     $query = "SELECT * FROM order";
-                    $result = mysqli_query(connection(),$query);
+                    $result = mysqli_query(connection(), $query);
                 ?>
 
-                <?php 
-                    while($data = mysqli_fetch_array($result)): 
-                ?>
+                <?php while($data = mysqli_fetch_array($result)) : ?>
 
                 <tr>
-                    <td><?php echo $data['id_order']?></td>
-                    <td><?php echo $data['tgl/jam']?></td>
-                    <td><?php echo $data['nama_pelanggan']?></td>
-                    <td><?php echo $data['jumlah']?></td>
-                    <td><?php echo $data['nama_menu']?></td>
-                    <td><?php echo $data['harga']?></td>
-                    <td><?php echo $data['total_harga']?></td>
-                    <td><?php echo $data['total_order']?></td>
+                    <td> <?php echo $data['id_order'];?></td>
+                    <td> <?php echo $data['tgl/jam'];?></td>
+                    <td> <?php echo $data['nama_pelanggan'];?></td>
+                    <td> <?php echo $data['jumlah'];?></td>
+                    <td> <?php echo $data['nama_menu'];?></td>
+                    <td> <?php echo $data['harga'];?></td>
+                    <td> <?php echo $data['total_harga'];?></td>
+                    <td> <?php echo $data['total_order'];?></td>
+                    <td>
+                        <a href="<?php echo "print.php?id_menu=".$data['id_menu'] ?>"> print </a> &nbsp;&nbsp;
+                    </td>
                 </tr>
                 <?php endwhile ?>
             </tbody>
