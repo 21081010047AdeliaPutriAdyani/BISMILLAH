@@ -35,23 +35,24 @@
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM order";
-                    $result = mysqli_query(connection(), $query);
+                    $query = "SELECT * FROM rincian";
+                    $result = mysqli_query(connection(), $query)
                 ?>
+
 
                 <?php while($data = mysqli_fetch_array($result)) : ?>
 
                 <tr>
-                    <td> <?php echo $data['id_order'];?></td>
-                    <td> <?php echo $data['tgl/jam'];?></td>
-                    <td> <?php echo $data['nama_pelanggan'];?></td>
-                    <td> <?php echo $data['jumlah'];?></td>
-                    <td> <?php echo $data['nama_menu'];?></td>
-                    <td> <?php echo $data['harga'];?></td>
-                    <td> <?php echo $data['total_harga'];?></td>
-                    <td> <?php echo $data['total_order'];?></td>
+                    <td> <?php echo $data['id_order']; ?></td>
+                    <td> <?php echo $data['tgl/jam']; ?></td>
+                    <td> <?php echo $data['nama_pelanggan']; ?></td>
+                    <td> <?php echo $data['jumlah']; ?></td>
+                    <td> <?php echo $data['nama_menu']; ?></td>
+                    <td> <?php echo $data['harga']; ?></td>
+                    <td> <?php echo $data['total_harga']; ?></td>
+                    <td> <?php echo $data['total_order']; ?></td>
                     <td>
-                        <a href="<?php echo "print.php?id_menu=".$data['id_menu'] ?>"> print </a> &nbsp;&nbsp;
+                        <a href="<?php echo "print.php?id_order=".$data['id_order'] ?>"> print </a> &nbsp;&nbsp;
                     </td>
                 </tr>
                 <?php endwhile ?>

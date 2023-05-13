@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
   PRIMARY KEY (`id_menu`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
-CREATE TABLE IF NOT EXISTS `order` (
+CREATE TABLE IF NOT EXISTS `rincian` (
   `id_order` int(11) NOT NULL AUTO_INCREMENT,
   `tgl/jam` DATETIME,
   `nama_pelanggan` varchar(100) NOT NULL,
