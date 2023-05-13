@@ -23,8 +23,7 @@ if($tipe_file == "image/jpeg" || $tipe_file == "image/png"){ // Cek apakah tipe 
     if(move_uploaded_file($tmp_file, $path)){ // Cek apakah gambar berhasil diupload atau tidak
       // Jika gambar berhasil diupload, Lakukan :	
       // Proses simpan ke Database
-      $query = "INSERT INTO menu (id_menu, gambar, nama_menu, harga) 
-                VALUES('$id_menu', '$gambar', '$nama_menu', '$harga')";
+      $query = "UPDATE menu SET gambar='$gambar', nama_menu='$nama_menu', harga='$harga' WHERE id_menu='$id_menu'";
       $sql = mysqli_query($connection, $query); // Eksekusi/ Jalankan query dari variabel $query
       
       if($sql){ // Cek jika proses simpan ke database sukses atau tidak
