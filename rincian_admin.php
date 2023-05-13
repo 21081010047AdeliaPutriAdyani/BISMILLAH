@@ -55,7 +55,7 @@
                         <a href="<?php echo "print.php?id_menu=".$data['id_menu'] ?>"> print </a> &nbsp;&nbsp;
                     </td>
                 </tr>
-                <?php endwhile; ?>
+                <?php endwhile ?>
             </tbody>
     </table>
     
