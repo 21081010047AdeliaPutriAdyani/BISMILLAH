@@ -42,6 +42,7 @@
                   <tr>
                     <td><?php echo $data['Tanggal/Jam'];  ?></td>
                     <td><?php echo $data['Total Harga'];  ?></td>
+                    <td><?php echo $data['Total Perbulan'];  ?></td>
                  </tr>
                  <?php endwhile ?>
                  <tbody>
