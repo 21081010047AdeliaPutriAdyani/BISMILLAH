@@ -30,14 +30,13 @@
   </head>
 
   <body>
-        <nav>
-            <ul>
-              <li>
-                <a href="<?php echo "menu_admin.php"; ?>">Data Menu</a>
-              </li>
-            </ul>
-        </nav>
+    <h2 align = "center">FORM TAMBAH DATA MENU</h2>
 
+    <center>
+    <a href="<?php echo "menu_admin.php"; ?>">DATA MENU</a>
+    <p></p>
+    </center>
+        
         <main role="main">
           
           <?php 
@@ -49,7 +48,6 @@
               }
            ?>
 
-          <h3>Form Tambah Data Menu</h3>
           <form action="addmenu_admin.php" method="POST">
             
             <div>
