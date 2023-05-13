@@ -33,7 +33,7 @@
                 <?php while($data = mysqli_fetch_array($result)) : ?>
                     <tr>
                         <td> <?php echo $data['id_menu']; ?></td>
-                        <td> <?php echo "img src='images/" . $data['gambar'] . "width='100' height='100'" ?></td> 
+                        <td> <?php echo "img src='images/" . $data['gambar'] . " style='width=100; height=100;' " ?></td> 
                         <td> <?php echo $data['nama_menu']; ?></td>
                         <td> <?php echo $data['harga']; ?></td>
                         <td>
