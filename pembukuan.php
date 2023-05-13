@@ -32,6 +32,7 @@
                     
                 <tbody>               
                 <?php 
+                include "koneksi.php";
                   $query = "SELECT * FROM pembukuan";
                   $result = mysqli_query(connection(), $query)
                  ?>

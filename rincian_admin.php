@@ -23,7 +23,7 @@
             <thead bgcolor = silver>
                 <tr>
                     <th>id_order</th>
-                    <th>tgl/jam</th>
+                    <th>tgl_jam</th>
                     <th>nama_pelanggan</th>
                     <th>jumlah</th>
                     <th>nama_menu</th>
@@ -35,9 +35,10 @@
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM order";
-                    $result = mysqli_query(connection(), $query);
+                    $query = "SELECT * FROM rincian";
+                    $result = mysqli_query(connection(), $query)
                 ?>
+
 
                 <?php while($data = mysqli_fetch_array($result)) : ?>
 
@@ -54,7 +55,7 @@
                         <a href="<?php echo "print.php?id_menu=".$data['id_menu'] ?>"> print </a> &nbsp;&nbsp;
                     </td>
                 </tr>
-                <?php endwhile ?>
+                <?php endwhile; ?>
             </tbody>
     </table>
     
