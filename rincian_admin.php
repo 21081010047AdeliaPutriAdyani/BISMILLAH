@@ -8,7 +8,32 @@
     <title>Rincian Pesanan</title>
 </head>
 <body>
+    <h2 align = "center">RINCIAN PESANAN</h2>
+
+    <center>
+        <a href="<?php echo "menu_admin.php"; ?>">MENU</a>
+        <a href="<?php echo "rincian_admin.php"; ?>">RINCIAN PESANAN</a>
+        <a href="<?php echo "pembukuan.php"; ?>">LAPORAN PENJUALAN</a>
+    </center>
+
     <table>
+        <tr>
+            <td colspan="1">
+
+            </td>
+            <td>
+                <center>
+                    <a href="<?php echo "addmenu_admin.php"; ?>">ADD MENU</a>
+                    <p></p>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <table border = 1px; align = "center">
+            <thead bgcolor = silver>
+        <table>
             <thead>
                 <tr>
                     <th>id_order</th>
