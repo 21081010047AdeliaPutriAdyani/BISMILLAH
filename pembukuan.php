@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laporan Keuangan</title>
+    <title>Rincian Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="pemweb">
+        <h3>
+            <li class="navi"><a href="<?php echo "menu_admin.php"; ?>"> Menu</a></li>
+            <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>">Rincian Pesanan</a></li>
+            <li class="navi"><a href="<?php echo "pembukuan.php"; ?>">Laporan Penjualan</a></li>
+        </h3>
+    </ul>
+	<title>Laporan Penjualan</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Tautkan file CSS Bootstrap -->
