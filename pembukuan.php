@@ -18,24 +18,22 @@
 							<th>Tanggal/Jam</th>
 							<th>Total Harga</th>
 						</tr>
-					</thead>
-                    <tbody>
-                    <div class="row">
+                    </thead> 
+                    </tbody>
+                </table>
+                <div class="row">
 					<div class="col-md-7 text-right">
-						<p>Total Perbulan: </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Tautkan file JavaScript Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-                
+						<p>Total Perbulan : </p>
+                    </div>
+                    <!-- Tautkan file JavaScript Bootstrap -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                    
+                <tbody>               
                 <?php 
                   $query = "SELECT * FROM pembukuan";
-                  $result = mysqli_query(connection(),$query);
+                  $result = mysqli_query(connection(), $query)
                  ?>
 
                  <?php while($data = mysqli_fetch_array($result)): ?>
@@ -43,9 +41,9 @@
                     <td><?php echo $data['Tanggal/Jam'];  ?></td>
                     <td><?php echo $data['Total Harga'];  ?></td>
                     <td><?php echo $data['Total Perbulan'];  ?></td>
-                 </tr>
-                 <?php endwhile ?>
-                 <tbody>
-				</table>
+                  </tr>
+                <?php endwhile ?>
+                <tbody>
+			    </table>
 </body>
 </html>
