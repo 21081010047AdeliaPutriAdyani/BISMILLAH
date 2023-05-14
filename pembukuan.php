@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rincian Pesanan</title>
+	<title>Laporan Penjualan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <ul class="pemweb">
         <h3>
             <li class="navi"><a href="<?php echo "menu_admin.php"; ?>"> Menu</a></li>
-            <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>">Rincian Pesanan</a></li>
-            <li class="navi"><a href="<?php echo "pembukuan.php"; ?>">Laporan Penjualan</a></li>
+            <li class="navi"><a href="<?php echo "rincian_admin.php"; ?>"> Rincian Pemesanan</a></li>
+            <li class="navi"><a href="<?php echo "pembukuan.php"; ?>"> Laporan Penjualan</a></li>            
         </h3>
     </ul>
-	<title>Laporan Penjualan</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Tautkan file CSS Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-	<div class="container mt-5">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-center mb-5">Laporan Penjualan</h2>
-				<table class="table table-bordered">
-					<thead>
-						<tr bgcolor="silver">
+    <h2 align = "center">LAPORAN PENJUALAN</h2>
+    <div>
+        <table border = 1px; align = "center"; style="width:100%">
+            <thead bgcolor = silver>
+                <tr>
 							<th>Tanggal/Jam</th>
 							<th>Total Harga</th>
+                            <th>Total Perbulan</th>
 						</tr>
                     </thead> 
                     </tbody>
                 </table>
                 <div class="row">
 					<div class="col-md-7 text-right">
-						<p>Total Perbulan : </p>
                     </div>
-                    <!-- Tautkan file JavaScript Bootstrap -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-                    
                 <tbody>               
                 <?php 
-                include "koneksi.php";
                   $query = "SELECT * FROM pembukuan";
                   $result = mysqli_query(connection(), $query)
                  ?>
