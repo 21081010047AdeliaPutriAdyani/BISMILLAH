@@ -34,7 +34,6 @@ if (!$koneksi) {
 </head>
 
 <body>
-    <br>
     <div class="mx-auto">
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -98,6 +97,7 @@ if (!$koneksi) {
                             <p>&copy; Copyright <strong>Assier</strong>. All Rights Reserved</p>
                         </div>
                     </div>
+                    <br>
                 </div>
             </div>
         </div>
