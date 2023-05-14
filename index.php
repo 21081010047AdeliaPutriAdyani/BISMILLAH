@@ -28,7 +28,9 @@
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
-                        <br>
+                        <div class="card-header">
+                            <h5><strong>Assier</strong></h5>
+                        </div>
                         <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
                             alt="Logo assier" style="width: 75%;">
                         <div class="card-body">
@@ -43,8 +45,7 @@
                             <a href="#" class="btn btn-primary">Mulai Pesanan</a><br>
                         </div>
                         <br>
-                        <div class="footer bg-body-secondary">
-                            <br>
+                        <div class="card-footer text-body-secondary">
                             <p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
                             <p>&copy; Copyright <strong>Assier</strong>. All Rights Reserved</p>
                         </div>

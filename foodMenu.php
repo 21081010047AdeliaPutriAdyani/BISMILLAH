@@ -39,7 +39,7 @@ if (!$koneksi) {
         <div class="row justify-content-center">
             <div class="col-11">
                 <h5 class="text-center"></h5>
-                <div class="card">
+                <div class="card" style="width: 100%;">
                     <div class="card-header">
                         <h5><strong>Assier</strong></h5>
                     </div>
