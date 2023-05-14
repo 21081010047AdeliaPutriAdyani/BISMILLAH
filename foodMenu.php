@@ -76,7 +76,9 @@ if (!$koneksi) {
                                             <?php echo $harga ?>
                                         </td>
                                         <td scope="row">
-
+                                            <a href="#" class="btn btn-danger">-</a>
+                                            <input class="form-contol form-control-sm col-sm-2" type="text" placeholder="0">
+                                            <a href="#" class="btn btn-primary">+</a>
                                         </td>
                                     </tr>
                                     <?php
@@ -85,7 +87,7 @@ if (!$koneksi) {
                             </tbody>
                         </table>
                         <div class="col" align="right">
-                            <a href="3" class="btn btn-primary">Lanjutkan Pesanan</a>
+                            <a href="#" class="btn btn-primary">Lanjutkan Pesanan</a>
 
                         </div>
                     </div>
