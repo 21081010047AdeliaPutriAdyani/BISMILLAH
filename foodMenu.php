@@ -6,7 +6,7 @@ $db = "selforder";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 if (!$koneksi) {
-    echo "database tidak terhubung";
+    die("Database tidak terhubung");
 }
 ?>
 
@@ -83,7 +83,7 @@ if (!$koneksi) {
                                 ?>
                             </tbody>
                         </table>
-                        <div class="col">
+                        <div class="col" align="right">
                             <a href="#" class="btn btn-primary">Lanjutkan Pesanan</a>
 
                         </div>
