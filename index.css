@@ -1,0 +1,46 @@
+/* Atur ukuran font dan warna latar belakang */
+body {
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+/* Atur lebar maksimum dan margin */
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* Atur tampilan judul */
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Atur tampilan tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Atur tampilan header tabel */
+.table th, .table td {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+button {
+    width: 100%;
+    max-width: 150px;
+}
+@media (max-width: 767px) {
+    /* Perubahan tata letak untuk ponsel dengan layar kecil */
+    .table {
+        max-width: 320px;
+    }
+}
