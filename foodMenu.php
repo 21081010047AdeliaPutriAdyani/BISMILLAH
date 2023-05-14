@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$user = "user";
+$user = "root";
 $pass = "";
 $db = "selforder";
 
