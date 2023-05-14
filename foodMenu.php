@@ -88,7 +88,7 @@ if (!$koneksi) {
                                 </tbody>
                             </table>
                             <div class="col" align="right">
-                                <a href="Rincian_pesanan.php" class="btn btn-primary">Lanjutkan Pesanan</a>
+                                <a href="Rincian_pesanan.html" class="btn btn-primary">Lanjutkan Pesanan</a>
 
                             </div>
                         </div>
