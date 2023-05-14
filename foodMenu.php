@@ -1,3 +1,15 @@
+<?php
+$host = "localhost";
+$user = "user";
+$pass = "";
+$db = "selforder";
+
+$koneksi = mysqli_connect($host, $user, $pass, $db);
+if (!$koneksi) {
+    echo "database tidak terhubung";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,15 +44,49 @@
                         Silahkan pilih menu anda
                     </div>
                     <div class="card-body">
-                        <table class="table table-striped table-hover table-bordered">
-                            <tr>
-                                <th>Gambar menu</th>
-                                <th>Menu</th>
-                                <th>Harga Satuan</th>
-                                <th>Kuantitas</th>
-                            </tr>
+                        <form action="" method="post"></form>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Gambar</th>
+                                    <th scope="col">Menu</th>
+                                    <th scope="col">Harga Satuan</th>
+                                    <th scope="col">Kuantitas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $sql1 = "select * from menu order by id_menu asc";
+                                $q1 = mysqli_query($koneksi, $sql1);
+                                while ($r2 = mysqli_fetch_array($q1)) {
+                                    $id_menu = $r2['id_menu'];
+                                    $gambar = $r2['gambar'];
+                                    $nama_menu = $r2['nama_menu'];
+                                    $harga = $r2['harga'];
+                                    ?>
+                                    <tr>
+                                        <td scope="row">
+                                            <?php echo $id_menu ?>
+                                        </td>
+                                        <td scope="row">
+                                            <?php echo $gambar ?>
+                                        </td>
+                                        <td scope="row">
+                                            <?php echo $nama_menu ?>
+                                        </td>
+                                        <td scope="row">
+                                            <?php echo $harga ?>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+                            </tbody>
                         </table>
-                        <a href="#" class="btn btn-primary">Lanjutkan Pesanan</a>
+                        <div class="col">
+                            <a href="#" class="btn btn-primary">Lanjutkan Pesanan</a>
+
+                        </div>
                     </div>
                     <div class="card-footer text-body-secondary">
                         <p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
