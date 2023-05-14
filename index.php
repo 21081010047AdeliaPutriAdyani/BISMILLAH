@@ -43,7 +43,7 @@
                                     <input type="text" class="form-control" id="inputnama">
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary">Mulai Pesanan</a><br>
+                            <a href="foodMenu.php" class="btn btn-primary">Mulai Pesanan</a><br>
                         </div>
                         <br>
                         <div class="card-footer text-body-secondary">
