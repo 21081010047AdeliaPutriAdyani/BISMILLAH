@@ -93,7 +93,7 @@ if (!$koneksi) {
                         </div>
                     </div>
                     <div class="card-footer text-body-secondary">
-                        <p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
+                        <p>Jl. Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
                         <p>&copy; Copyright <strong>Assier</strong>. All Rights Reserved</p>
                     </div>
                 </div>
