@@ -85,7 +85,7 @@ if (!$koneksi) {
                             </tbody>
                         </table>
                         <div class="col" align="right">
-                            <a href="#" class="btn btn-primary">Lanjutkan Pesanan</a>
+                            <a href="3" class="btn btn-primary">Lanjutkan Pesanan</a>
 
                         </div>
                     </div>
