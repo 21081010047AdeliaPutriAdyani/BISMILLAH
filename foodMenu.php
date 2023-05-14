@@ -44,7 +44,7 @@ if (!$koneksi) {
                             <h4>Assier</h4>
                         </div>
                         <div class="card-body">
-                            <p>Silahkan pilih menu anda</p>
+                            <p>Silahkan pilih menu anda : </p>
                             <form action="" method="post"></form>
                             <table class="table ">
                                 <thead>
