@@ -45,10 +45,10 @@ if (!$koneksi) {
                     </div>
                     <div class="card-body">
                         <form action="" method="post"></form>
-                        <table class="table">
+                        <table class="table ">
                             <thead>
                                 <tr>
-                                    <th scope="col">Gambar</th>
+                                    <th scope="col"></th>
                                     <th scope="col">Menu</th>
                                     <th scope="col">Harga Satuan</th>
                                     <th scope="col">Kuantitas</th>
@@ -66,9 +66,6 @@ if (!$koneksi) {
                                     ?>
                                     <tr>
                                         <td scope="row">
-                                            <?php echo $id_menu ?>
-                                        </td>
-                                        <td scope="row">
                                             <?php echo $gambar ?>
                                         </td>
                                         <td scope="row">
@@ -76,6 +73,10 @@ if (!$koneksi) {
                                         </td>
                                         <td scope="row">
                                             <?php echo $harga ?>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary">+</a>
+                                            <a href="#" class="btn btn-danger">-</a>
                                         </td>
                                     </tr>
                                     <?php
