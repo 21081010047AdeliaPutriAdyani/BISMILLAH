@@ -41,10 +41,10 @@ if (!$koneksi) {
                 <br>
                 <div class="card" style="width: 100%;">
                     <div class="card-header">
-                        <h5>Assier</h5>
+                        <h4>Assier</h4>
                     </div>
                     <div class="card-body">
-                        <p> <strong>Silahkan pilih menu anda</strong> </p>
+                        <p>Silahkan pilih menu anda</p>
                         <form action="" method="post"></form>
                         <table class="table ">
                             <thead>
