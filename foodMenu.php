@@ -76,9 +76,10 @@ if (!$koneksi) {
                                             <?php echo $harga ?>
                                         </td>
                                         <td scope="row">
+                                            <a href="#" class="btn btn-primary">+</a><br><br>
+                                            <input class="form-control form-control-sm" type="text" placeholder="0"
+                                                aria-label=".form-control-sm example"><br>
                                             <a href="#" class="btn btn-danger">-</a>
-                                            <input class="form-contol form-control-sm col-sm-2" type="text" placeholder="0">
-                                            <a href="#" class="btn btn-primary">+</a>
                                         </td>
                                     </tr>
                                     <?php
