@@ -41,9 +41,10 @@ if (!$koneksi) {
                 <h5 class="text-center"></h5>
                 <div class="card">
                     <div class="card-header">
-                        Silahkan pilih menu anda
+                        <h5><strong>Assier</strong></h5>
                     </div>
                     <div class="card-body">
+                        <h5 class="card-title"> Silahkan pilih menu anda</h5>
                         <form action="" method="post"></form>
                         <table class="table ">
                             <thead>
@@ -74,9 +75,8 @@ if (!$koneksi) {
                                         <td scope="row">
                                             <?php echo $harga ?>
                                         </td>
-                                        <td>
-                                            <a href="#" class="btn btn-primary">+</a>
-                                            <a href="#" class="btn btn-danger">-</a>
+                                        <td scope="row">
+
                                         </td>
                                     </tr>
                                     <?php
