@@ -38,10 +38,10 @@ if (!$koneksi) {
     <div class="mx-auto">
         <div class="row justify-content-center">
             <div class="col-11">
-                <h5 class="text-center"></h5>
+                <br>
                 <div class="card" style="width: 100%;">
                     <div class="card-header">
-                        <h5><strong>Assier</strong></h5>
+                        <h5>Assier</h5>
                     </div>
                     <div class="card-body">
                         <p> <strong>Silahkan pilih menu anda</strong> </p>

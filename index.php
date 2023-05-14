@@ -24,16 +24,17 @@
 <body>
     <br>
     <div class="mx-auto">
-        <div class="container-fluid text-center">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <h5><strong>Assier</strong></h5>
+                            <h4>Assier</h4>
                         </div>
+                        <br>
                         <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
                             alt="Logo assier" style="width: 75%;">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Selamat Datang di Assier</h5>
                             <p class="card-text">Nikmati menu kesukaan anda tanpa lama mengantri.</p>
                             <div class="mb-3 row">
