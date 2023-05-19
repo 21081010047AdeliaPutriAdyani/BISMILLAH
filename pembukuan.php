@@ -36,6 +36,9 @@
                 
                   $query = "SELECT * FROM pembukuan";
                   $result = mysqli_query(connection(), $query)
+                  $no = 1;
+                  $total = 0;
+                    $total += $data['Total Perbulan']; 
                  ?>
 
                  <?php while($data = mysqli_fetch_array($result)): ?>
@@ -45,6 +48,10 @@
                     <td><?php echo $data['Total Perbulan'];  ?></td>
                   </tr>
                 <?php endwhile ?>
+                <tr>
+                    <td colspan="2"><b>Total</b></td>
+                    <td><b><?php echo $total; ?> </b></td>
+                 </tr>
                 <tbody>
 			    </table>
 </body>
