@@ -84,10 +84,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="file" name="gambar">
             </div>
             <div>
-            <label></label>
-            <input type="file" name="gambar">
-            </div>
-            <div>
             <label>NAMA MENU</label>
             <input type="text" placeholder="nama menu" name="nama_menu" required="required">
             </div>
