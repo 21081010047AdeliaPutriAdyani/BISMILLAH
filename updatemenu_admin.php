@@ -25,9 +25,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $harga = $_POST['harga'];
   $folder = './images/';
 
-  // Pindahkan file gambar yang diupload ke folder yang ditentukan
-  move_uploaded_file($source, $folder . $gambar);
-    
+  if ($gambar != '') {
+    move_uploaded_file($source, $folder . $gambar);
+    $update = mysqli_query(connection(), "UPDATE menu SET 
+      gambar = '$gambar',
+      nama_menu = '$nama_menu',
+      harga = '$harga'
+      WHERE id_menu = '$id_menu'
+    ");
+    if ($update) {
+      echo 'berhasil';
+    } else {
+      echo 'gagal';
+    }
+  } else {
+    $update = mysqli_query(connection(), "UPDATE menu SET 
+    gambar = '$gambar'
+    WHERE id_menu = '$id_menu'
+    ");
+    if ($update) {
+      echo 'berhasil';
+    } else {
+      echo 'gagal';
+    }
+  }
+
+
   // Query SQL
   $sql = "UPDATE menu SET gambar='$gambar', nama_menu='$nama_menu', harga='$harga' WHERE id_menu='$id_menu'";
 
@@ -56,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <h2 align="center">FORM UPDATE DATA MENU</h2>
 
   <center>
-    <a href="<?php echo "menu_admin.php"; ?>">DATA MENU</a>
+    <a href="menu_admin.php">DATA MENU</a>
     <p></p>
   </center>
 
@@ -70,8 +93,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div>
           <label>GAMBAR</label>
-          <input type="hidden" name="img" value="<?php echo $gambar ?>" >
+          <input type="hidden" name="img" value="<?php echo $data['gambar']; ?>">
           <input type="file" name="gambar">
+        </div>
+        <div>
+          <img src="images/<?php echo $data['gambar']; ?>" width="100px" height="100px" />
         </div>
         <div>
           <label>NAMA MENU</label>
