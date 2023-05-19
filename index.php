@@ -16,6 +16,7 @@
         @media(min-width: 600px) {
             .mx-auto {
                 width: 50%;
+                font-family: 'Poppins', sans-serif;
             }
         }
     </style>

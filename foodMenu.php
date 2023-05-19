@@ -28,9 +28,27 @@ if (!$koneksi) {
         @media(min-width: 600px) {
             .mx-auto {
                 width: 50%;
+                font-family: 'Poppins', sans-serif;
             }
         }
     </style>
+    <script>
+        function decrement() {
+            var input = document.getElementById('myInput');
+            var value = parseInt(input.value);
+            value = isNaN(value) ? 0 : value;
+            value--;
+            input.value = value < 0 ? 0 : value;
+        }
+
+        function increment() {
+            var input = document.getElementById('myInput');
+            var value = parseInt(input.value);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+    </script>
 </head>
 
 <body>
@@ -76,10 +94,10 @@ if (!$koneksi) {
                                                 <?php echo $harga ?>
                                             </td>
                                             <td scope="row">
-                                                <a href="#" class="btn btn-primary">+</a><br><br>
-                                                <input class="form-control form-control-sm" type="text" placeholder="0"
-                                                    aria-label=".form-control-sm example"><br>
-                                                <a href="#" class="btn btn-danger">-</a>
+                                                <button class="btn btn-primary" onclick="increment()">+</button><br><br>
+                                                <input class="form-control form-control-sm" type="number" placeholder="0"
+                                                    aria-label=".form-control-sm example" id="myInput" value="0"><br>
+                                                <button class="btn btn-danger" onclick="decrement()">-</button>
                                             </td>
                                         </tr>
                                         <?php
