@@ -24,14 +24,17 @@
 <body>
     <br>
     <div class="mx-auto">
-        <div class="container-fluid text-center">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            <h4>Assier</h4>
+                        </div>
                         <br>
                         <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
                             alt="Logo assier" style="width: 75%;">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Selamat Datang di Assier</h5>
                             <p class="card-text">Nikmati menu kesukaan anda tanpa lama mengantri.</p>
                             <div class="mb-3 row">
@@ -40,12 +43,11 @@
                                     <input type="text" class="form-control" id="inputnama">
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary">Mulai Pesanan</a><br>
+                            <a href="foodMenu.php" class="btn btn-primary">Mulai Pesanan</a><br>
                         </div>
                         <br>
-                        <div class="footer bg-body-secondary">
-                            <br>
-                            <p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
+                        <div class="card-footer text-body-secondary">
+                            <p>Jl. Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
                             <p>&copy; Copyright <strong>Assier</strong>. All Rights Reserved</p>
                         </div>
                     </div>
