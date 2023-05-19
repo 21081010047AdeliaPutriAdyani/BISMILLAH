@@ -67,8 +67,7 @@ if (!$koneksi) {
                                         ?>
                                         <tr>
                                             <td scope="row">
-                                                <img src="images/<?php echo $gambar; ?>" width="120px"
-                                                    height="120px">
+                                                <img src="images/<?php echo $gambar; ?>" width="120px" height="120px">
                                             </td>
                                             <td scope="row">
                                                 <?php echo $nama_menu ?>
