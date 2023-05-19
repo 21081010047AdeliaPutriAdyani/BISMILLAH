@@ -75,23 +75,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     ?>
 
-    <form action="addmenu_admin.php" method="POST" enctype="multipart/form-data">
-      <div>
-        <label>ID MENU</label>
-        <input type="text" placeholder="id menu" name="id_menu" required="required">
-      </div>
-      <div>
-        <label>GAMBAR</label>
-        <input type="file" name="gambar">
-      </div>
-      <div>
-        <label>NAMA MENU</label>
-        <input type="text" placeholder="nama menu" name="nama_menu" required="required">
-      </div>
-      <div>
-        <label>HARGA</label>
-        <input type="text" placeholder="harga" name="harga" required="required">
-      </div>
+      <form action="addmenu_admin.php" method="POST" enctype="multipart/form-data">
+        <div>
+          <label>ID MENU</label>
+          <input type="text" placeholder="id menu" name="id_menu" required="required">
+        </div>
+        <div>
+            <label>GAMBAR</label>
+            <input type="file" name="gambar">
+            </div>
+            <div>
+            <label>NAMA MENU</label>
+            <input type="text" placeholder="nama menu" name="nama_menu" required="required">
+            </div>
+            <div>
+            <label>HARGA</label>
+            <input type="text" placeholder="harga" name="harga" required="required">
+            </div>
 
       <button type="submit" value="upload">Simpan</button>
     </form>
