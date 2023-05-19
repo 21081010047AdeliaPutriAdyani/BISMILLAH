@@ -38,7 +38,7 @@
                 <?php while($data = mysqli_fetch_array($result)) : ?>
                     <tr align = "center">
                         <td> <?php echo $data['id_menu']; ?></td>
-                        <td> <img src="images/<?php echo $data['gambar']; ?>" width="100"></td> 
+                        <td> <img src="images/<?php echo $data['gambar']; ?>" width="100" height="100px"></td> 
                         <td> <?php echo $data['nama_menu']; ?></td>
                         <td> <?php echo $data['harga']; ?></td>
                         <td>
