@@ -1,3 +1,7 @@
+<?php
+    include ('koneksi.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +33,7 @@
                     </div>
                 <tbody>               
                 <?php 
+                
                   $query = "SELECT * FROM pembukuan";
                   $result = mysqli_query(connection(), $query)
                  ?>
