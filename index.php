@@ -1,3 +1,33 @@
+<?php
+include('koneksi.php');
+
+$status = '';
+
+// Melakukan pengecekan apakah ada form yang dipost
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id_order = $_POST['id_order'];
+    $id_menu = $_POST['id_menu'];
+    $tgl_jam = $_POST['tgl_jam'];
+    $nama_pelanggan = $_POST['nama_pelanggan'];
+    $jumlah = $_POST['jumlah'];
+    $nama_menu = $_POST['nama_menu'];
+    $harga = $_POST['harga'];
+    $total_harga = $_POST['total_harga'];
+    $total_order = $_POST['total_order'];
+
+    $query = "INSERT INTO rincian (id_order, id_menu, tgl_jam, nama_pelanggan, jumlah, nama_menu, harga, total_harga, total_order) 
+              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')"; 
+
+    // Eksekusi query
+    $result = mysqli_query(connection(), $query);
+    if ($result) {
+        $status = 'ok';
+    } else {
+        $status = 'err';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,18 +68,21 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Selamat Datang di Assier</h5>
                             <p class="card-text">Nikmati menu kesukaan anda tanpa lama mengantri.</p>
-                            <div class="mb-3 row">
-                                <label for="inputnama" class="col-sm-3 col-form-label">Nama Pemesan</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="inputnama">
+                            <form action="index.php" method="POST">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Nama Pemesan</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" placeholder="nama_pelanggan" name="nama_pelanggan" required="required">
+                                    </div>
                                 </div>
-                            </div>
-                            <a href="foodMenu.php" class="btn btn-primary">Mulai Pesanan</a><br>
+
+                                <a href="foodMenu.php" class="btn btn-primary">Mulai Pesanan</a><br>
+                            </form>
                         </div>
                         <br>
                         <div class="card-footer text-body-secondary">
                             <p>Jl. Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
-                            <p>&copy; Copyright <strong>Assier</strong>. All Rights Reserved</p>
+                            <p>&copy; Assier. All Rights Reserved</p>
                         </div>
                     </div>
                     <br>
