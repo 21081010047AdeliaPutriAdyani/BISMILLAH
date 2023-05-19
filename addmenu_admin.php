@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <form action="addmenu_admin.php" method="POST" enctype="multipart/form-data">
         <div>
           <label>ID MENU</label>
-          <input type="text" placeholder="id menu" name="id_menu" required="required">
+          <input type="text" placeholder="id menu" name="id_menu">
         </div>
         <div>
             <label>GAMBAR</label>
