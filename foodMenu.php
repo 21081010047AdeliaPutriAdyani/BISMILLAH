@@ -59,7 +59,7 @@ if (!$koneksi) {
                     <br>
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <h4>Assier</h4>
+                            <h4>ASSIER</h4>
                         </div>
                         <div class="card-body">
                             <p>Silahkan pilih menu anda : </p>

@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $total_order = $_POST['total_order'];
 
     $query = "INSERT INTO rincian (id_order, id_menu, tgl_jam, nama_pelanggan, jumlah, nama_menu, harga, total_harga, total_order) 
-              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')"; 
+              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')";
 
     // Eksekusi query
     $result = mysqli_query(connection(), $query);
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <h4>Assier</h4>
+                            <h4>ASSIER</h4>
                         </div>
                         <br>
                         <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
@@ -72,7 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Nama Pemesan</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder="nama_pelanggan" name="nama_pelanggan" required="required">
+                                        <input type="text" class="form-control" name="nama_pelanggan"
+                                            required="required">
                                     </div>
                                 </div>
 
