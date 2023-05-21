@@ -8,7 +8,7 @@ function connection()
    $dbPass = '';
    $dbName = "selforder";
 
-   $koneksi = mysqli_connect($dbServer, $dbUser, $dbPass);
+   $koneksi = mysqli_connect($dbServer, $dbUser, $dbPass, $dbName);
 
    if (!$koneksi) {
       die('Koneksi gagal: ' . mysqli_error($koneksi));
