@@ -1,13 +1,5 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "selforder";
-
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-if (!$koneksi) {
-    die("Database tidak terhubung");
-}
+include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +51,7 @@ if (!$koneksi) {
                     <br>
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <h4>ASSIER</h4>
+                            <h4>Assier</h4>
                         </div>
                         <div class="card-body">
                             <p>Silahkan pilih menu anda : </p>
@@ -76,7 +68,7 @@ if (!$koneksi) {
                                 <tbody>
                                     <?php
                                     $sql1 = "select * from menu order by id_menu asc";
-                                    $q1 = mysqli_query($koneksi, $sql1);
+                                    $q1 = mysqli_query(connection(), $sql1);
                                     while ($r2 = mysqli_fetch_array($q1)) {
                                         $id_menu = $r2['id_menu'];
                                         $gambar = $r2['gambar'];
