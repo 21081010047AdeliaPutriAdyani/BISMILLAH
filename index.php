@@ -20,6 +20,24 @@ if (isset($_POST['simpan'])) {
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" href="home.css">
+    <script>
+        function increment(event, id) {
+            event.preventDefault()
+            var input = document.getElementById('myInput_' + id);
+            var value = parseInt(input.value);
+            input.value = (value + 1).toString();
+        }
+
+        function decrement(event, id) {
+            event.preventDefault()
+            var input = document.getElementById('myInput_' + id);
+            var value = parseInt(input.value);
+            if (value > 0) {
+                input.value = (value - 1).toString();
+            }
+        }
+    </script>
+
     <title>Home - Assier</title>
 </head>
 
@@ -59,53 +77,57 @@ if (isset($_POST['simpan'])) {
                             <hr>
                             <div class="pesanan">
                                 <p>Silahkan pilih menu anda : </p>
-                                <form action="" method="post"></form>
-                                <table class="table ">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Menu</th>
-                                            <th scope="col">Harga Satuan</th>
-                                            <th scope="col">Kuantitas</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-                                        $sql1 = "select * from menu order by id_menu asc";
-                                        $q1 = mysqli_query(connection(), $sql1);
-                                        while ($r2 = mysqli_fetch_array($q1)) {
-                                            $id_menu = $r2['id_menu'];
-                                            $gambar = $r2['gambar'];
-                                            $nama_menu = $r2['nama_menu'];
-                                            $harga = $r2['harga'];
-                                            ?>
+                                <form action="" method="post">
+                                    <table class="table ">
+                                        <thead>
                                             <tr>
-                                                <td scope="row">
-                                                    <img src="images/<?php echo $gambar; ?>" width="80rem" height="80rem">
-                                                </td>
-                                                <td scope="row">
-                                                    <?php echo $nama_menu ?>
-                                                </td>
-                                                <td scope="row">
-                                                    <?php echo $harga ?>
-                                                </td>
-                                                <td scope="row">
-                                                    <button class="btn btn-primary" onclick="increment()">+</button><br><br>
-                                                    <input class="form-control form-control-sm" type="number"
-                                                        placeholder="0" aria-label=".form-control-sm example" id="myInput"
-                                                        value="0"><br>
-                                                    <button class="btn btn-danger" onclick="decrement()">-</button>
-                                                </td>
+                                                <th scope="col"></th>
+                                                <th scope="col">Menu</th>
+                                                <th scope="col">Harga Satuan</th>
+                                                <th scope="col">Kuantitas</th>
                                             </tr>
+                                        </thead>
+                                        <tbody>
                                             <?php
-                                        }
-                                        ?>
-                                    </tbody>
-                                </table>
-                                <div class="col" align="right">
-                                    <a href="Rincian_pesanan.html" class="btn btn-primary">Lanjutkan Pesanan</a>
+                                            $sql1 = "select * from menu order by id_menu asc";
+                                            $q1 = mysqli_query(connection(), $sql1);
+                                            while ($r2 = mysqli_fetch_array($q1)) {
+                                                $id_menu = $r2['id_menu'];
+                                                $gambar = $r2['gambar'];
+                                                $nama_menu = $r2['nama_menu'];
+                                                $harga = $r2['harga'];
+                                                ?>
+                                                <tr>
+                                                    <td scope="col">
+                                                        <img src="images/<?php echo $gambar; ?>" width="80rem"
+                                                            height="80rem">
+                                                    </td>
+                                                    <td scope="col">
+                                                        <?php echo $nama_menu ?>
+                                                    </td>
+                                                    <td scope="col">
+                                                        <?php echo $harga ?>
+                                                    </td>
+                                                    <td scope="col">
+                                                        <button class="btn btn-primary"
+                                                            onclick="increment(event, <?php echo $id_menu; ?>)">+</button><br><br>
+                                                        <input class="form-control form-control-sm" type="number"
+                                                            placeholder="0" aria-label=".form-control-sm example"
+                                                            id="myInput_<?php echo $id_menu; ?>" value="0"><br>
+                                                        <button class="btn btn-danger"
+                                                            onclick="decrement(event, <?php echo $id_menu; ?>)">-</button>
+                                                    </td>
+                                                </tr>
+                                                <?php
+                                            }
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                    <div class="col" align="right">
+                                        <a href="Rincian_pesanan.html" class="btn btn-primary">Lanjutkan Pesanan</a>
 
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <br>
