@@ -19,15 +19,8 @@ if (isset($_POST['simpan'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
+    <link rel="stylesheet" href="home.css">
     <title>Home - Assier</title>
-    <style>
-        @media(min-width: 600px) {
-            .mx-auto {
-                width: 50%;
-                font-family: 'Poppins', sans-serif;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -38,13 +31,19 @@ if (isset($_POST['simpan'])) {
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <h4>ASSIER</h4>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
+                                        alt="Logo assier">
+                                </div>
+                                <div class="col-10">
+                                    <h4>ASSIER</h4>
+                                </div>
+                            </div>
                         </div>
                         <br>
-                        <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
-                            alt="Logo assier" style="width: 75%;">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Selamat Datang di Assier</h5>
+                            <h5 class="card-title">Selamat Datang di Restoran Kami  </h5>
                             <p class="card-text">Nikmati menu kesukaan anda tanpa lama mengantri.</p>
                             <form action="" method="POST">
                                 <div class="mb-3 row">
