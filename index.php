@@ -74,7 +74,7 @@ if (isset($_POST['simpan'])) {
                                     </div>
                                 </form>
                             </div>
-                            <hr>
+                            <hr class="hr">
                             <div class="pesanan">
                                 <p>Silahkan pilih menu anda : </p>
                                 <form action="" method="post">
@@ -125,7 +125,6 @@ if (isset($_POST['simpan'])) {
                                     </table>
                                     <div class="col" align="right">
                                         <button class="btn btn-primary" id="simpan">Lanjutkan Pesanan</button>
-
                                     </div>
                                 </form>
                             </div>

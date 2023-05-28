@@ -32,3 +32,11 @@
   font-weight: 550;
   padding-left: 1rem;
 }
+
+.form-control-sm {
+  width: 40%;
+}
+
+.pemesan {
+  padding-bottom: 0.5rem;
+} 
