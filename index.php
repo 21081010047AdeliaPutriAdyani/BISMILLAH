@@ -60,6 +60,7 @@ if (isset($_POST['simpan'])) {
                             </nav>
                         </div>
                         <br>
+
                         <div class="card-body">
                             <div class="pemesan text-center">
                                 <h5 class="card-title">Selamat Datang di Restoran Kami </h5>
@@ -75,6 +76,7 @@ if (isset($_POST['simpan'])) {
                                 </form>
                             </div>
                             <hr class="hr">
+
                             <div class="pesanan">
                                 <p>Silahkan pilih menu anda : </p>
                                 <form action="" method="post">
