@@ -7,7 +7,7 @@ if (isset($_POST['simpan'])) {
     $tgl_jam = date('Y-m-d H:i:s');
 
     // Menyimpan data pemesan ke tabel 'rincian'
-    $query = "INSERT INTO rincian (`tgl/jam`, `nama_pelanggan`) VALUES ('$tgl_jam', '$nama_pelanggan')";
+    $query = "INSERT INTO rincian (`tgl_jam`, `nama_pelanggan`) VALUES ('$tgl_jam', '$nama_pelanggan')";
     if (mysqli_query(connection(), $query)) {
         // Redirect atau lakukan tindakan lain setelah penyimpanan data
         header("Location: elang.php");
