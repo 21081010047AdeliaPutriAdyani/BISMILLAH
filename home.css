@@ -4,6 +4,18 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
