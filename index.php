@@ -49,15 +49,15 @@ if (isset($_POST['simpan'])) {
                 <div class="col-11">
                     <div class="card" style="width: 100%;">
                         <div class="card-header">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="images/Assistant Cashier and Bookkeeper.png" class="card-img mx-auto"
-                                        alt="Logo assier">
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="images/Assistant Cashier and Bookkeeper.png" alt="Logo"
+                                            class="d-inline-block align-text-center">
+                                        <span class="namaapk">ASSIER</span>
+                                    </a>
                                 </div>
-                                <div class="col-10">
-                                    <h4>ASSIER</h4>
-                                </div>
-                            </div>
+                            </nav>
                         </div>
                         <br>
                         <div class="card-body">

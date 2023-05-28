@@ -1,31 +1,22 @@
 @media (min-width: 600px) {
   .mx-auto {
     width: 50%;
-    font-family: "Poppins", sans-serif;
   }
 }
 
-.mx-auto h4 {
-  font-weight: 550;
-  text-align: start;
-  padding-top: 0.5rem;
-  padding-left: 0;
-  margin-left: 0;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.card-header,
 .card-footer {
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 }
-.col-2 {
-  display: flex;
-}
-.col-10 {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
+
 .card-header img {
-  width: 80%;
+  width: 4rem;
   height: auto;
+}
+.namaapk {
+  font-weight: 550;
+  padding-left: 1rem;
 }
