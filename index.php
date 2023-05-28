@@ -124,7 +124,7 @@ if (isset($_POST['simpan'])) {
                                         </tbody>
                                     </table>
                                     <div class="col" align="right">
-                                        <a href="Rincian_pesanan.html" class="btn btn-primary">Lanjutkan Pesanan</a>
+                                        <button class="btn btn-primary" id="simpan">Lanjutkan Pesanan</button>
 
                                     </div>
                                 </form>
