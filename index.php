@@ -1,9 +1,22 @@
 <?php
 include('koneksi.php');
+date_default_timezone_set('Asia/Jakarta');
 
 if (isset($_POST['simpan'])) {
-    mysqli_query(connection(), "insert into rincian set nama_pelanggan = '$_POST[nama_pelanggan]'");
+    $nama_pelanggan = isset($_POST['nama_pelanggan']);
+    $tgl_jam = date('Y-m-d H:i:s');
+
+    // Menyimpan data pemesan ke tabel 'rincian'
+    $query = "INSERT INTO rincian (`tgl/jam`, `nama_pelanggan`) VALUES ('$tgl_jam', '$nama_pelanggan')";
+    if (mysqli_query(connection(), $query)) {
+        // Redirect atau lakukan tindakan lain setelah penyimpanan data
+        header("Location: elang.php");
+        exit();
+    } else {
+        echo "Error: " . mysqli_error(connection());
+    }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +78,7 @@ if (isset($_POST['simpan'])) {
                             <div class="pemesan text-center">
                                 <h5 class="card-title">Selamat Datang di Restoran Kami </h5>
                                 <p class="card-text">Nikmati menu kesukaan anda tanpa lama mengantri.</p>
-                                <form action="" method="POST">
+                                <form method="POST">
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label text-start">Nama Pemesan</label>
                                         <div class="col-sm-9">
@@ -115,7 +128,8 @@ if (isset($_POST['simpan'])) {
                                                             onclick="increment(event, <?php echo $id_menu; ?>)">+</button><br><br>
                                                         <input class="form-control form-control-sm" type="number"
                                                             placeholder="0" aria-label=".form-control-sm example"
-                                                            id="myInput_<?php echo $id_menu; ?>" value="0"><br>
+                                                            id="myInput_<?php echo $id_menu; ?>"
+                                                            name="jumlah[<?php echo $id_menu; ?>]" value="0"><br>
                                                         <button class="btn btn-danger"
                                                             onclick="decrement(event, <?php echo $id_menu; ?>)">-</button>
                                                     </td>
@@ -126,7 +140,8 @@ if (isset($_POST['simpan'])) {
                                         </tbody>
                                     </table>
                                     <div class="col" align="right">
-                                        <button class="btn btn-primary" id="simpan">Lanjutkan Pesanan</button>
+                                        <button class="btn btn-primary" id="simpan" name="simpan"
+                                            type="submit">Lanjutkan Pesanan</button>
                                     </div>
                                 </form>
                             </div>
