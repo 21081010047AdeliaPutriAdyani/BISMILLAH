@@ -6,17 +6,10 @@ $status = '';
 // Melakukan pengecekan apakah ada form yang dipost
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id_order = $_POST['id_order'];
-    $id_menu = $_POST['id_menu'];
-    $tgl_jam = $_POST['tgl_jam'];
     $nama_pelanggan = $_POST['nama_pelanggan'];
-    $jumlah = $_POST['jumlah'];
-    $nama_menu = $_POST['nama_menu'];
-    $harga = $_POST['harga'];
-    $total_harga = $_POST['total_harga'];
-    $total_order = $_POST['total_order'];
 
-    $query = "INSERT INTO rincian (id_order, id_menu, tgl_jam, nama_pelanggan, jumlah, nama_menu, harga, total_harga, total_order) 
-              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')"; 
+    $query = "INSERT INTO rincian (id_order, nama_pelanggan) 
+              VALUES('$id_order', '$nama_pelanggan')"; 
 
     // Eksekusi query
     $result = mysqli_query(connection(), $query);
