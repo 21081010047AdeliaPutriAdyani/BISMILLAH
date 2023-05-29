@@ -1,0 +1,42 @@
+@media (min-width: 600px) {
+  .mx-auto {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.card-footer {
+  padding-top: 1.5rem;
+}
+
+.card-header img {
+  width: 4rem;
+  height: auto;
+}
+.namaapk {
+  font-weight: 550;
+  padding-left: 1rem;
+}
+
+.form-control-sm {
+  width: 40%;
+}
+
+.pemesan {
+  padding-bottom: 0.5rem;
+} 
