@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Jakarta');
 if (isset($_POST['simpan'])) {
     $nama_pelanggan = isset($_POST['nama_pelanggan']);
     $tgl_jam = date('Y-m-d H:i:s');
-
+}
 // Melakukan pengecekan apakah ada form yang dipost
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id_order = $_POST['id_order'];
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $total_order = $_POST['total_order'];
 
     $query = "INSERT INTO rincian (id_order, id_menu, tgl_jam, nama_pelanggan, jumlah, nama_menu, harga, total_harga, total_order) 
-              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')"; 
+              VALUES('$id_order', '$id_menu', '$tgl_jam', '$nama_pelanggan', '$jumlah', '$nama_menu', '$harga', '$total_harga', '$total_order')";
 
     // Eksekusi query
     $result = mysqli_query(connection(), $query);
