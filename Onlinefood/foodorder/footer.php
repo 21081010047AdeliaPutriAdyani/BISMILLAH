@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>Copyright &copy; 2023 <a href="https://freewebsitecode.com/">Assier</a> All Rights Reserved</p>
+      <p>Copyright &copy; 2023. Assier All Rights Reserved</p>
     </div>
   </div>
 </footer>
