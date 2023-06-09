@@ -54,11 +54,11 @@
                             <p class="card-text truncate">
                                 <?php echo $row['description'] ?>
                             </p>
-                            <h6 class="card-title">Price: $
+                            <h6 class="card-title">Harga: Rp
                                 <?php echo $row['price'] ?>
                             </h6>
                             <div class="text-center">
-                                <button class="btn btn-sm btn-outline-primary view_prod btn-block" data-id=<?php echo $row['id'] ?>><i class="fa fa-eye"></i> View</button>
+                                <button class="btn btn-sm btn-outline-primary view_prod btn-block" data-id=<?php echo $row['id'] ?>><i class="fa fa-eye"></i> Lihat</button>
 
                             </div>
                         </div>
