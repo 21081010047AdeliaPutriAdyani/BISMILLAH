@@ -23,7 +23,7 @@
                 <!-- <p>Vestibulum sed augue ac lorem rutrum congue. Donec cursus mollis sapien, non vulputate odio
                             congue id. Sed mattis, tortor nec facilisis laoreet, mauris magna finibus nisl, eu pulvinar
                             erat libero in turpis. </p> -->
-                <a href="#" class="btn">Pesan</a>
+                <a href="#menu" class="btn">Pesan</a>
 
             </div>
             <div class="col-right">
@@ -35,7 +35,7 @@
 </section>
 
 <div class="container">
-    <section class="page-section" id="menu">
+    <section class="page-section menu" id="menu">
         <div id="menu-field" class="card-deck">
             <?php
             include 'admin/db_connect.php';
