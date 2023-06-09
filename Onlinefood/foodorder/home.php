@@ -18,7 +18,7 @@
         <div class="home-wrapper d-grid">
             <div class="col-left">
                 <h3>Selamat Datang di</h3>
-                <h1>Restoran Kami</h1>
+                <h1>Restoran <br> Istana Rasa</h1>
 
                 <!-- <p>Vestibulum sed augue ac lorem rutrum congue. Donec cursus mollis sapien, non vulputate odio
                             congue id. Sed mattis, tortor nec facilisis laoreet, mauris magna finibus nisl, eu pulvinar
