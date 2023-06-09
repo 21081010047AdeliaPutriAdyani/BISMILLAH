@@ -3,7 +3,7 @@
 	<div class="container h-100">
 		<div class="row h-100 align-items-center justify-content-center text-center">
 			<div class="col-lg-10 align-self-end mb-4 page-title">
-				<h2 class="text-white">Cart List</h2>
+				<h2 class="text-white">Keranjang Saya</h2>
 				<hr class="divider my-4" />
 			</div>
 
@@ -18,7 +18,7 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-8"><b>Card</b></div>
+								<div class="col-md-8"><b>List Makanan</b></div>
 								<div class="col-md-4 text-right"><b>Total</b></div>
 							</div>
 						</div>
@@ -98,8 +98,8 @@
 								</b></p>
 							<hr>
 							<div class="text-center">
-								<button class="btn btn-block btn-outline-primary" type="button" id="checkout">Proceed to
-									Checkout</button>
+								<button class="btn btn-block btn-outline-primary" type="button" id="checkout">Lanjutkan
+									Pesanan</button>
 							</div>
 						</div>
 					</div>
