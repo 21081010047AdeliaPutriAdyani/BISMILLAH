@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Social media </h5>
+        <h5>Sosial media </h5>
         <ul>
           <li><a href="https://facebook.com/assier/">Facebook</a></li>
           <li><a href="https://instagram.com/">Instagram</a></li>
