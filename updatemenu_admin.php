@@ -85,30 +85,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main role="main">
     <form action="updatemenu_admin.php" method="POST" enctype="multipart/form-data">
-      <?php while ($data = mysqli_fetch_array($result)) : ?>
+      <?php while ($data = mysqli_fetch_array($result)): ?>
 
-        <div>
-          <label>ID MENU</label>
-          <input type="text" placeholder="id menu" name="id_menu" value="<?php echo $data['id_menu']; ?>" required="required" readonly>
-        </div>
-        <div>
-          <label>GAMBAR</label>
-          <input type="hidden" name="img" value="<?php echo $data['gambar']; ?>">
-          <input type="file" name="gambar">
-        </div>
-        <div>
-          <img src="images/<?php echo $data['gambar']; ?>" width="100px" height="100px" />
-        </div>
-        <div>
-          <label>NAMA MENU</label>
-          <input type="text" placeholder="nama menu" name="nama_menu" value="<?php echo $data['nama_menu']; ?>" required="required">
-        </div>
-        <div>
-          <label>HARGA</label>
-          <input type="text" placeholder="harga" name="harga" value="<?php echo $data['harga']; ?>" required="required">
-        </div>
+        <table align="center">
+        <tr>
+          <td>Id Menu</td>
+          <td><input type="text" name="id_menu" value="<?php echo $data['id_menu']; ?>"></td>
+        </tr>
+        <tr>
+          <td>Gambar</td>
+          <td><input type="file" name="gambar" value="<?php echo $data['gambar']; ?>"></td>
+          
+        </tr>
+        <tr>
+          <td>Nama Menu</td>
+          <td><input type="text" name="nama_menu" value="<?php echo $data['nama_menu']; ?>"></td>
+        </tr>
+        <tr>
+          <td>Harga</td>
+          <td><input type="text" name="harga" value="<?php echo $data['harga']; ?>"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> <button type="submit" name="kirim" value="update">Simpan</button> </td>
+        </tr>
+      </table>
+
       <?php endwhile; ?>
-      <button type="submit" name="kirim" value="update">Simpan</button>
     </form>
   </main>
 </body>
