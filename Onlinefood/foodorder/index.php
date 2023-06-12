@@ -50,6 +50,7 @@ foreach ($query as $key => $value) {
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:void(0)" id="login_now">Login</a>
             </li>
           <?php endif; ?>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="admin/login.php">Login Admin</a></li>
         </ul>
       </div>
     </div>
