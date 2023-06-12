@@ -10,7 +10,7 @@
       <div class="footer-col">
         <h5>Tautan yang bermanfaat</h5>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="#">Tentang Kami</a></li>
         </ul>
       </div>
